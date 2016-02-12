@@ -20,7 +20,6 @@ var makeTreeString = function(){
   }
   console.log(treeString);
 }
-
 //call function
 makeTreeString();
 
