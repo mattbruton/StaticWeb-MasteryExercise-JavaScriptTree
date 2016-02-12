@@ -14,7 +14,7 @@ var makeTreeString = function(){
     // the \n breaks the characters into a new line in console
     var characterGen = treeObject.character.repeat(i) + treeObject.character.repeat(i) + "\n";
     characterGen = characterGen.substr(1);
-    treeString += spacing.repeat(treeObject.height - treeObject.height) + characterGen +spacing.repeat(treeObject.height - i);
+    treeString += spacing.repeat(0) + characterGen +spacing.repeat(treeObject.height - i);
   }
   console.log(treeString);
 }
