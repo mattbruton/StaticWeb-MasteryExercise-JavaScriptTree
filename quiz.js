@@ -1,9 +1,16 @@
-// create 'tree' function, single object as an argument with two key/value pairs.
+//single object with two key/value pairs.
 var treeObject = {
-  height: 10,
-  character: "?"
+  height: "",
+  character: ""
 };
 
+//stores user input as values for object
+function objectValSelection() {
+    treeObject.height = document.getElementById('tree-height').value;
+    treeObject.character = document.getElementById('character-select').value;
+}
+
+//variables needed for string creation
 var spacing = " ";
 var treeString;
 
@@ -16,20 +23,19 @@ var makeTreeString = function(){
     characterGen = characterGen.substr(1);
     //spacing for tree in console.log, should add the inverse of space that the for loop increments
     //the charater width of tree to the beginning of each line.
-    treeString += spacing.repeat(0) + characterGen +spacing.repeat(treeObject.height - i);
+    treeString += spacing.repeat(0) + characterGen + spacing.repeat(treeObject.height - i);
   }
   console.log(treeString);
-}
-//call function
-makeTreeString();
+};
 
+
+//create tree in console when pressing button
+document.getElementById("treeButton").onclick = function() {
+  makeTreeString();
+};
 
 //   take key provided by user input
-
 
 //   take height from user input for tree height 
 
 //   if either field is empty, display an alert stating all fields must be completed.
-
-
-// create "Grow your tree button" that appends value of tree function to DOM.
