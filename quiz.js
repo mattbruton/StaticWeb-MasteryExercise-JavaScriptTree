@@ -6,15 +6,12 @@ var treeObject = {
  
 //stores user input as values for object
 
-function objectValSelection() {
+document.getElementById("tree-height").onkeyup = function() {
+  treeObject.height = document.getElementById("tree-height").value;
+}
 
-  //   take height from user input for tree height 
-
-    treeObject.height = document.getElementById('tree-height').value;
-
-  //   take character provided by user input
-
-    treeObject.character = document.getElementById('character-select').value;
+document.getElementById("character-select").onkeyup = function() {
+  treeObject.character = document.getElementById("character-select").value;
 }
 
 //variables needed for string creation
