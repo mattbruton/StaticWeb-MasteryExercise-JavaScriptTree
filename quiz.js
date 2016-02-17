@@ -18,12 +18,13 @@ document.getElementById("character-select").onkeyup = function() {
 
 var spacing = " ";
 
-// creates string that is equal to input + (input - 1) for assignment formatting 
+// function to create string displayed in console. 
 
 var makeTreeString = function(){
   var treeString = "";
   for (i = 0; i <= treeObject.height; i++) {
 
+    // creates string that is equal to input + (input - 1) for assignment formatting 
     // the \n breaks the characters into a new line in console
 
     var characterGen = treeObject.character.repeat(i) + treeObject.character.repeat(i) + "\n";
