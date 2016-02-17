@@ -45,14 +45,9 @@ document.getElementById("treeButton").onclick = function() {
 
   if (treeObject.height.length < 1) {
     alert("Please enter a height for your tree.");
-  } 
-  // Wanted to do a single if statement using || to test both at the same time
-  // but the character.length would pop up the alert window even if the 
-  // conditions were met. Looking into why, but for now, the work around is
-  // two 'if' statements.
-
-  if (treeObject.character.length < 1) {
-    alert("Please enter a character to use for your tree's creation");
+  } else if (treeObject.character.length != 1 ) {
+    alert("Please enter a SINGLE character to use for your tree's creation");
+  } else {
+    makeTreeString();
   }
-  makeTreeString();
 };
