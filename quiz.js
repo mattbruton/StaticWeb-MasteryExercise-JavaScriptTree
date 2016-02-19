@@ -20,25 +20,28 @@ var spacing = " ";
 
 // function to create string displayed in console. 
 
-var makeTreeString = function(){
+var makeTreeString = function(myObj){
   var treeString = "";
-  for (i = 0; i <= treeObject.height; i++) {
+  for (i = 0; i <= myObj.height; i++) {
 
     // creates string that is equal to input + (input - 1) for assignment formatting 
     // the \n breaks the characters into a new line in console
 
-    var characterGen = treeObject.character.repeat(i) + treeObject.character.repeat(i) + "\n";
+    var characterGen = myObj.character.repeat(i) + myObj.character.repeat(i) + "\n";
     characterGen = characterGen.substr(1);
 
     //spacing for tree in console.log, should add the inverse of space that the for loop increments
     //the charater width of tree to the beginning of each line.
     
-    treeString += spacing.repeat(0) + characterGen + spacing.repeat(treeObject.height - i);
+    treeString += spacing.repeat(0) + characterGen + spacing.repeat(myObj.height - i);
   };
   console.log(treeString);
 };
 
 //create tree in console when pressing button
+document.getElementById("treePlace").onsubmit = function() {
+  return false;
+}
 
 document.getElementById("treeButton").onclick = function() {
 
@@ -49,6 +52,6 @@ document.getElementById("treeButton").onclick = function() {
   } else if (treeObject.character.length != 1 ) {
     alert("Please enter a SINGLE character to use for your tree's creation");
   } else {
-    makeTreeString();
+    makeTreeString(treeObject);
   }
 };
