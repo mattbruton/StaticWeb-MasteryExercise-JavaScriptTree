@@ -27,12 +27,12 @@ var makeTreeString = function(myObj){
     // creates string that is equal to input + (input - 1) for assignment formatting 
     // the \n breaks the characters into a new line in console
 
-    var characterGen = myObj.character.repeat(i) + myObj.character.repeat(i) + "\n";
+    var characterGen = myObj.character.repeat(i * 2) + "\n";
     characterGen = characterGen.substr(1);
 
     //spacing for tree in console.log, should add the inverse of space that the for loop increments
     //the charater width of tree to the beginning of each line.
-    
+
     treeString += characterGen + spacing.repeat(myObj.height - i);
   };
   console.log(treeString);
