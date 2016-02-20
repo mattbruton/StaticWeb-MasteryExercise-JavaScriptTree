@@ -33,7 +33,7 @@ var makeTreeString = function(myObj){
     //spacing for tree in console.log, should add the inverse of space that the for loop increments
     //the charater width of tree to the beginning of each line.
     
-    treeString += spacing.repeat(0) + characterGen + spacing.repeat(myObj.height - i);
+    treeString += characterGen + spacing.repeat(myObj.height - i);
   };
   console.log(treeString);
 };
