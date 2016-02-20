@@ -14,13 +14,10 @@ document.getElementById("character-select").onkeyup = function() {
   treeObject.character = document.getElementById("character-select").value;
 }
 
-//variables needed for string creation
-
-var spacing = " ";
-
 // function to create string displayed in console. 
 
 var makeTreeString = function(myObj){
+  var spacing = " ";
   var treeString = "";
   for (i = 0; i <= myObj.height; i++) {
 
