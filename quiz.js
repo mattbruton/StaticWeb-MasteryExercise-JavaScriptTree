@@ -22,7 +22,6 @@ var makeTreeString = function(myObj){
   for (i = 0; i <= myObj.height; i++) {
 
     // creates string that is equal to input + (input - 1) for assignment formatting 
-    // the \n breaks the characters into a new line in console
 
     var characterGen = myObj.character.repeat(i * 2) + "\n";
     characterGen = characterGen.substr(1);
