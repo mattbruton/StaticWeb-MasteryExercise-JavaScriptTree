@@ -1,6 +1,6 @@
 # Static Web Mastery Exercise - JavaScript Tree
 
-Mastery Exercise for the Static Web milestone during Evening Cohort 3. 
+Mastery Exercise for the Static Web milestone during Evening Cohort 3. The user gives value to the two inputs and a tree is generated in the console based on those values.
 
 ==============================
 
@@ -84,7 +84,7 @@ If either of the input fields does not have a value in it when the user presses 
 
 Here's what the pine tree should look like when you specify a height of 7, and use the asterisk character.
 
-```js
+```
       *
      ***
     *****
